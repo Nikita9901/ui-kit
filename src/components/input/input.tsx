@@ -6,5 +6,5 @@ export interface InputProps extends ComponentProps<typeof ShadcnInput> {
 }
 
 export function Input({ error, ...props }: InputProps) {
-  return <ShadcnInput aria-invalid={!!error} {...props} />
+  return <ShadcnInput aria-invalid={error ? true : undefined} {...props} />
 }

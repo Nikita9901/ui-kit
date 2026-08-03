@@ -6,5 +6,5 @@ export interface ButtonProps extends ComponentProps<typeof ShadcnButton> {
 }
 
 export function Button({ error, ...props }: ButtonProps) {
-  return <ShadcnButton aria-invalid={!!error} {...props} />
+  return <ShadcnButton aria-invalid={error ? true : undefined} {...props} />
 }
