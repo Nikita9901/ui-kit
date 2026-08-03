@@ -1,0 +1,32 @@
+# dependencies
+node_modules
+.pnpm-store
+
+# build output
+dist
+*.tsbuildinfo
+
+# storybook
+storybook-static
+.storybook-out
+
+# testing
+coverage
+playwright-report
+test-results
+blob-report
+
+# env
+.env
+.env.local
+.env.*.local
+
+# misc
+.DS_Store
+*.log
+.turbo
+
+# IDE
+.idea
+*.iml
+.vscode
