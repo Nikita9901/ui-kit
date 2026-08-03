@@ -30,3 +30,4 @@ blob-report
 .idea
 *.iml
 .vscode
+*storybook.log
