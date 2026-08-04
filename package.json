@@ -4,8 +4,32 @@
   "type": "module",
   "private": false,
   "description": "",
-  "main": "index.js",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./button": {
+      "types": "./dist/button.d.ts",
+      "import": "./dist/button.js",
+      "require": "./dist/button.cjs"
+    },
+    "./input": {
+      "types": "./dist/input.d.ts",
+      "import": "./dist/input.js",
+      "require": "./dist/input.cjs"
+    }
+  },
   "scripts": {
+    "build": "tsup",
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
@@ -47,7 +71,8 @@
     "shadcn": "^4.16.1",
     "storybook": "^10.5.6",
     "tailwindcss": "^4.3.3",
-    "typescript": "^7.0.2",
+    "tsup": "^8.5.1",
+    "typescript": "^5.7.3",
     "vite": "^8.2.0",
     "vitest": "^4.1.10",
     "zod": "^4.4.3"
