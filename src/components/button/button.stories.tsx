@@ -1,6 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react-vite"
 import { expect, fn, userEvent, within } from "storybook/test"
-// import { userEvent as realUserEvent } from "vitest/browser"
 
 import { Button } from "./button"
 
@@ -48,23 +47,6 @@ export default meta
 type Story = StoryObj<typeof meta>
 
 export const Default: Story = {}
-
-// export const Hovered: Story = {
-//   play: async ({ canvasElement }) => {
-//     const canvas = within(canvasElement)
-//     const button = canvas.getByRole("button")
-//
-//     const initialBackground = getComputedStyle(button).backgroundColor
-//
-//     // TODO:поменять на проверку цветов когда сделаю тему и цвета
-//
-//     await realUserEvent.hover(button)
-//
-//     await expect(getComputedStyle(button).backgroundColor).not.toBe(
-//       initialBackground
-//     )
-//   },
-// }
 
 export const Focused: Story = {
   play: async ({ canvasElement }) => {

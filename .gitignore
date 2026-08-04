@@ -31,3 +31,7 @@ blob-report
 *.iml
 .vscode
 *storybook.log
+
+# failed tests
+__screenshots__
+.vitest-attachments
