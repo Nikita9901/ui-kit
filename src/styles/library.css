@@ -1,5 +1,7 @@
 @import "tailwindcss" source(none);
 @import "./theme.css";
 
-@source "./components/**/*.tsx"
-@source "./shared/ui/shadcn/**/*.tsx"
+@source "../components/**/*.tsx";
+@source "../shared/ui/shadcn/**/*.tsx";
+@source not "../components/**/*.stories.tsx";
+@source not "../components/**/*.test.tsx";
