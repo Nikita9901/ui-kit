@@ -10,12 +10,12 @@ describe("Button", () => {
     const screen = await render(<Button>Button</Button>)
     const button = screen.getByRole("button")
 
-    const initial = getComputedStyle(button.element()).backgroundColor
+    const initial = getComputedStyle(button.element()).backgroundImage
 
     await userEvent.hover(button)
 
     await expect
-      .poll(() => getComputedStyle(button.element()).backgroundColor)
+      .poll(() => getComputedStyle(button.element()).backgroundImage)
       .not.toBe(initial)
   })
 })

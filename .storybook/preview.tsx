@@ -1,5 +1,6 @@
 import type { Preview } from "@storybook/react-vite"
 import { withThemeByClassName } from "@storybook/addon-themes"
+import theme from "./theme"
 
 import "../src/styles/globals.css"
 
@@ -11,7 +12,7 @@ const preview: Preview = {
         date: /Date$/i,
       },
     },
-
+    docs: { theme },
     a11y: {
       test: "error",
     },

@@ -5,6 +5,7 @@ import { zodResolver } from "@hookform/resolvers/zod"
 import { z } from "zod"
 
 import { Input } from "./input"
+import { Button } from "@/components/button"
 
 const meta = {
   title: "Components/Input",
@@ -101,9 +102,9 @@ function LoginForm() {
       {errors.email && (
         <span className="text-destructive text-sm">{errors.email.message}</span>
       )}
-      <button type="submit" className="mt-2 text-sm underline">
+      <Button type="submit" className="mt-2 self-center">
         Submit
-      </button>
+      </Button>
     </form>
   )
 }
