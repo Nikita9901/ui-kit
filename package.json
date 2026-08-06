@@ -32,7 +32,7 @@
   "scripts": {
     "build": "tsup && pnpm build:css",
     "build:css": "tailwindcss -i ./src/styles/library.css -o ./dist/index.css --minify",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "vitest run",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
