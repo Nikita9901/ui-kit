@@ -37,7 +37,9 @@
     "lint": "eslint .",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "changeset": "changeset",
+    "changeset:version": "changeset version"
   },
   "keywords": [],
   "author": "Nikita9901",
