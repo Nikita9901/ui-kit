@@ -25,6 +25,11 @@ const preview: Preview = {
       },
       defaultTheme: "light",
     }),
+    (Story) => (
+      <div className="bg-background text-foreground flex rounded-lg px-12 py-6">
+        <Story />
+      </div>
+    ),
   ],
 }
 

@@ -28,9 +28,12 @@ export function Button({
       aria-invalid={error ? true : undefined}
       size={size}
       className={cn(
+        (variant === "outline" || variant === "ghost") &&
+          "text-foreground bg-transparent",
         (variant === undefined || variant === "default") &&
           "from-button-gradient-from to-button-gradient-to hover:from-button-gradient-from/90 hover:to-button-gradient-to/90 border-transparent bg-transparent bg-gradient-to-r text-white hover:bg-transparent",
         size && sizeClassNames[size],
+        "cursor-pointer",
         className
       )}
       {...props}
