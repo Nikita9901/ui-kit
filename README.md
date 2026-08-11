@@ -1,3 +1,5 @@
+Тестовое задание Security Lab - Mini UI-Kit
+
 # UI-Kit
 
 Мини UI-kit: `Button` и `Input`, собранные на [shadcn/ui](https://ui.shadcn.com/) + [base-ui](https://base-ui.com/) примитивах.
